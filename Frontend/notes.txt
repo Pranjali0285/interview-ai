@@ -1,0 +1,22 @@
+PHASE 1
+1. Created frontend folder and installed react and vite packages.
+2. Installed scss for styling. 
+
+4 layers of architecture
+
+UI
+-> component
+-> pages
+
+Hook (for managing state and api layers)
+-> hooks
+
+State  (for storing data)
+-> auth.context.jsx
+-> ai.context.jsx
+
+Api (communication with backend)
+-> services
+  -> auth.api.js
+
+

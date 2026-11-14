@@ -1,0 +1,26 @@
+PHASE 1
+1. First we created our project folder and did npm init -y to intialise our node.js application.
+2. Then we installed certain packages like express, mongoose and dotenv.
+3. To create an instance of our server we created a file called app.js and created our express app. In this app.js file we do various tasks such as: 
+-> initialising the server
+-> adding middlewares
+-> add apis and routes 
+4. To run the server, we created server.js. Here app will listen to the port. Also here we will connect database to the sever.
+5. In database.js we will write a func to connect db.
+6. Now the server is running and it is connected to our db.
+
+PHASE 2
+1. Created model userSchema
+2. Then we created three authentication related apis in auth.routes.js file:
+->register
+->login
+->logout
+3. The logic of each api is written in authController.js file under async functions 
+4. In registerUserController:
+-> fetch username, email, password from req.body
+-> if none of them exists, send msg.
+-> is user already exists checking either by email or username, send msg.
+-> for the password we'll use brcypt, hash and jwt
+5. Then created logic for loginUserController
+6. For loginUserController, used token blacklist logic for security
+7. Used postman to check apis working
